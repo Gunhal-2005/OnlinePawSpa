@@ -1,0 +1,92 @@
+/* Styling for the feedback section */
+.feedback-section {
+  margin-top: 50px; /* Add some spacing above */
+  overflow-x: auto; /* Make the section scrollable on the x-axis */
+  white-space: nowrap; /* Prevent wrapping of feedback items */
+  padding: 10px 0; /* Add some vertical padding */
+  display: flex; /* Use flexbox for centering */
+  justify-content: flex-start; /* Align the feedback list to the left */
+  align-items: center; /* Align feedback items vertically */
+  width: 100%;
+  scroll-behavior: smooth; /* Smooth scrolling when user scrolls */
+  padding-right: 15px; /* Prevent clipping on the right side */
+}
+
+/* Show the scrollbar for visibility (remove if you want to hide) */
+.feedback-section::-webkit-scrollbar {
+  width: 8px;
+  height: 2px;
+}
+
+/* Show track and thumb styles (optional) */
+.feedback-section::-webkit-scrollbar-thumb {
+  background-color: rgba(0, 0, 0, 0.3);
+  border-radius: 10px;
+}
+
+.feedback-section::-webkit-scrollbar-track {
+  background-color: rgba(0, 0, 0, 0.1);
+}
+
+/* Feedback list to display in a row */
+.feedback-list {
+  display: inline-flex; /* Display feedbacks in a row */
+  gap: 20px; /* Add space between feedback items */
+  justify-content: flex-start; /* Align the feedback items horizontally */
+  margin-bottom: 50px;
+}
+
+/* Styling each feedback item */
+.feedback-item {
+  margin-bottom: 15px;
+  background-color: #f9f9f9;
+  padding: 15px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  min-width: 250px; /* Minimum width for each feedback item */
+  max-width: 300px; /* Ensure feedback items don’t overflow */
+  text-align: center;
+  box-sizing: border-box;
+  transition: transform 0.3s ease; /* Smooth hover effect */
+}
+
+.feedback-item:hover {
+  transform: translateY(-5px); /* Slight lift effect on hover */
+}
+
+.feedback-item p {
+  margin: 0;
+}
+
+.feedback-item strong {
+  font-size: 1.1em;
+}
+
+/* Fixed heading style */
+.fixed-feedback-heading {
+  font-family: 'Roboto', sans-serif;
+  text-align: center;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+/* Additional styling for the feedback box */
+.feedback {
+  box-shadow: -3px 0px 10px black;
+  border-radius: 30px;
+}
+.navbar{
+  position: sticky;
+  top: 0;
+  z-index: 2000;
+}
+
+.custom-caption {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  color: white; /* Ensure the text is visible over the images */
+  text-shadow: 2px 2px 4px black; /* Add text shadow for better visibility */
+}
