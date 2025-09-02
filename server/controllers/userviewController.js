@@ -1,27 +1,5 @@
 
 
-// const Appointment = require("../models/Appointment");
-
-// const getUserAppointments = async (req, res) => {
-//   try {
-//     console.log("Authenticated User:", req.user); // Debugging
-
-//     if (!req.user) {
-//       return res.status(401).json({ message: "Unauthorized: No user data" });
-//     }
-
-//     const userId = req.user._id; // Get logged-in user ID
-//     const appointments = await Appointment.find({ userId });
-
-//     res.json(appointments);
-//   } catch (error) {
-//     console.error("Error fetching user appointments:", error);
-//     res.status(500).json({ message: "Server error", error: error.message });
-//   }
-// };
-
-// module.exports = { getUserAppointments };
-
 
 const Appointment = require("../models/Appointment");
 
