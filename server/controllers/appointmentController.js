@@ -1,31 +1,4 @@
 
-// const Appointment = require('../models/Appointment');
-
-// exports.createAppointment = async (req, res) => {
-//   try {
-//     const { ownerName, petName, service, price, appointmentDate, timeSlot, petImage, email, contactInfo, address } = req.body;
-
-//     if (!ownerName || !petName || !appointmentDate || !email || !petImage) {
-//       return res.status(400).json({ message: 'All required fields must be filled.' });
-//     }
-
-//     // Ensure the date is a weekday
-//     const selectedDate = new Date(appointmentDate);
-//     const isWeekday = selectedDate.getDay() >= 1 && selectedDate.getDay() <= 5;
-//     if (!isWeekday) {
-//       return res.status(400).json({ message: 'Appointments are only available on weekdays (Monday to Friday).' });
-//     }
-
-//     const newAppointment = new Appointment({
-//       ownerName, petName, service, price, appointmentDate, timeSlot, petImage, email, contactInfo, address
-//     });
-
-//     await newAppointment.save();
-//     res.status(201).json({ message: 'Appointment booked successfully!', appointment: newAppointment });
-//   } catch (error) {
-//     res.status(500).json({ message: 'Server error', error });
-//   }
-// };
 const jwt = require("jsonwebtoken");
 const Appointment = require("../models/Appointment");
 const User = require("../models/User");
