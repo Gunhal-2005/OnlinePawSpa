@@ -1,14 +1,4 @@
-// const Service = require("../models/Form"); // ✅ Ensure this is the correct path
 
-// // Get all services
-// exports.getServices = async (req, res) => {
-//   try {
-//     const services = await Service.find();
-//     res.json(services);
-//   } catch (error) {
-//     res.status(500).json({ message: "Error fetching services", error });
-//   }
-// };
 
 const Service = require("../models/Form"); // ✅ Ensure this is the correct path
 
